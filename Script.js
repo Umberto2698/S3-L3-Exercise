@@ -14,6 +14,10 @@ const addToList = (Item) => {
       input.innerText = "";
     }
   }
+  //Per fare in modo che la funzione di li non venga erditata dal bottone al suo interno
+  //basta mettere la funzionalità onclick su uno span all'interno di li invece che su
+  //li stesso
+
   const btn = document.createElement("button");
   btn.innerText = "Cancella questa task";
   btn.style = "margin-bottom: 15px";
@@ -26,6 +30,10 @@ const addToList = (Item) => {
   const blue = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);
   const li = document.createElement("li");
+
+  //Dopo aver creato l'elemento potevo usare list.innerHTML per inserire la lista con
+  //tutte le sue eventuali caratteristiche senza usare ogni volta li.style
+
   li.style = "display: inline-block";
   li.style = `color: rgb(${red}, ${green}, ${blue})`;
   li.innerText = `${listaObiettivi.obiettivo}`;
