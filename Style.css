@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DjRAMnLI5bKhDzmBbBaBuChTxrAaukM3KQ&usqp=CAU);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+#To-do-list {
+  margin-top: 20px;
+}
