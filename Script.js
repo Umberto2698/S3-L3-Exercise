@@ -2,6 +2,10 @@ const addToList = (Item) => {
   Item.preventDefault();
   const form = Item.target;
   const listaObiettivi = {};
+
+  //Potevo evitare il ciclo for dato che ho solo un tag input nel mio html
+  //Dovevo sempliemente selezionarlo con il suo id.
+
   for (let i = 0; i < form.elements.length; i++) {
     if (form.elements[i].tagName !== "BUTTON") {
       let input = form.elements[i].value;
